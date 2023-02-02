@@ -1,0 +1,13 @@
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+authors = [
+    "infra3.network <yuanchang.xu@outlook.com>"
+]
+license = "MIT/Apache-2.0"
+
+[workspace]
+members = [
+    "chaindb-node",
+    "chaindb-connector",
+]
