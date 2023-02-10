@@ -1,0 +1,14 @@
+[package]
+name = "chaindb-node"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+sc-cli = { version = "0.23.0" }
+clap = { version = "4.1.4"}
+
+[[bin]]
+name = "chaindb-node"
+path = "bin/main.rs"
+doctest = false
+test = false
