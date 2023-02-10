@@ -1,0 +1,16 @@
+[package]
+name = "chaindb-common"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+clap = { workspace = true }
+thiserror = { workspace = true }
+static_init = { workspace = true }
+tempfile = { workspace = true }
+directories = { workspace = true }
+libp2p = { workspace = true }
+zeroize = { workspace = true }
+array-bytes =  { workspace = true }
+primitive-types = { workspace = true }
+names = { workspace = true }

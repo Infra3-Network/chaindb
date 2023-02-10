@@ -6,7 +6,21 @@ authors = [
 ]
 license = "MIT/Apache-2.0"
 
+[workspace.dependencies]
+clap = { version = "4.1.4", features = ["derive"]}
+thiserror = { version = "1.0" }
+static_init = { version = "1.0.3" }
+tempfile = { version = "3.1.0" }
+directories = { version = "4.0.1" }
+libp2p = { version = "0.50.0", features = ["dns", "identify", "kad", "macros", "mdns", "mplex", "noise", "ping", "tcp",  "tokio", "yamux", "websocket"] }
+zeroize = { version = "1.5.7" }
+array-bytes =  { version = "6.0.0" }
+primitive-types = { version="0.12.1" }
+names = { version = "0.14.0" }
+tracing = { version = "0.1.37" }
 [workspace]
 members = [
-    "src/node"
+    "src/node",
+    # "src/connector",
+    "src/common",
 ]

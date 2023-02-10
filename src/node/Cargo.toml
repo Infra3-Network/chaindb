@@ -4,11 +4,13 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-sc-cli = { version = "0.23.0" }
-clap = { version = "4.1.4"}
+clap = { workspace = true }
+tracing = { workspace =true }
+libp2p = {workspace = true}
+chaindb-common = { path = "../common" }
 
 [[bin]]
-name = "chaindb-node"
+name = "node"
 path = "bin/main.rs"
 doctest = false
 test = false
